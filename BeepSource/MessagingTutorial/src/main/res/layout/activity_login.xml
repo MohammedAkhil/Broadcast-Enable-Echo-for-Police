@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.sinch.messagingtutorial.app.LoginActivity"
+    android:id="@+id/relativeLayout"
+    android:background="#010100">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/LinearLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/loginUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:textColor="@color/sinch_purple"
+            android:background="#650008"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Username">
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="40dp"
+            android:inputType="textPassword"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:textColor="@color/sinch_purple"
+            android:background="#0c005d"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Password">
+        </EditText>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/beep"
+        android:contentDescription=""
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:id="@+id/loginButton"
+            android:layout_above="@+id/LinearLayout"
+            android:layout_centerHorizontal="true"
+            android:background="#030041"
+            android:textColor="#ffffff"
+
+            android:hint="Login" />
+
+        <Button
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:id="@+id/signup"
+
+            android:background="#650008"
+            android:hint="SignUp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="40dp"
+
+
+             />
+
+    </LinearLayout>
+
+</RelativeLayout>
